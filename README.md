@@ -52,8 +52,20 @@ It’s fully integrated with **Jenkins Pipeline**, **supports cross-browser exec
    - ✅ Ratings > 3
    - ✅ Type contains “A/C”
    - ✅ Departure between 3PM and 10PM
-4. Get lowest price among filtered options  
-5. Log details with screenshot in **ExtentReport**
+4. Get lowest price among filtered options
+5. 
+ <img width="1695" height="852" alt="image" src="https://github.com/user-attachments/assets/2d18384e-2091-4198-bf28-893a7a2c5138" />
+
+6. Log details with screenshot in **ExtentReport**
+<img width="1892" height="889" alt="image" src="https://github.com/user-attachments/assets/1f5d4378-26c2-48a0-8537-81f31f85423f" />
+
+<img width="1894" height="524" alt="image" src="https://github.com/user-attachments/assets/2ebbf264-4157-4779-833d-6b7237b50e81" />
+
+<img width="1888" height="480" alt="image" src="https://github.com/user-attachments/assets/8e4993e8-d028-43a3-b098-c83b0f9b28f0" />
+
+<img width="1909" height="889" alt="image" src="https://github.com/user-attachments/assets/35787f6a-f89d-436b-8e7b-b5e8ff6b62f4" />
+
+<img width="1693" height="502" alt="image" src="https://github.com/user-attachments/assets/1697fd19-4bcf-4e7a-a29b-d4d8c2cee1d2" />
 
 ---
 
@@ -63,6 +75,8 @@ It’s fully integrated with **Jenkins Pipeline**, **supports cross-browser exec
 - 🔄 Browser is selected dynamically (`chrome` & `edge`)
 - 📧 Failure triggers email with build details
 - 📊 HTML reports published as **post-build action**
+- 
+ <img width="1919" height="907" alt="image" src="https://github.com/user-attachments/assets/cee3e7cf-2a66-4b40-ad20-f13b22f74d42" />
 
 ---
 
