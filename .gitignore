@@ -1,0 +1,19 @@
+# Ignore build and IDE-specific files
+/.idea/
+/.vscode/
+/*.iml
+/target/
+
+
+
+# Ignore screenshots and temporary files
+/screenshots/
+/*.png
+
+# Maven
+/logs/
+/*.log
+
+# OS specific
+.DS_Store
+Thumbs.db
