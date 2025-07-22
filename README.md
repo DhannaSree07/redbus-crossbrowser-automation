@@ -75,7 +75,9 @@ It’s fully integrated with **Jenkins Pipeline**, **supports cross-browser exec
 - 🔄 Browser is selected dynamically (`chrome` & `edge`)
 - 📧 Failure triggers email with build details
 - 📊 HTML reports published as **post-build action**
-- 
+
+<img width="1909" height="301" alt="image" src="https://github.com/user-attachments/assets/c138325c-9732-4fe5-97bd-a5374d1a22cb" />
+
 <img width="1914" height="585" alt="image" src="https://github.com/user-attachments/assets/5928a66d-7471-4c8f-aba4-58d23083e110" />
 
 
