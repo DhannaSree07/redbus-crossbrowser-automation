@@ -1,155 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-22T00:03:54 IST" name="CrossBrowser Suite" finished-at="2025-07-22T00:04:08 IST" duration-ms="14208">
+  <suite started-at="2025-07-22T00:44:52 IST" name="CrossBrowser Suite" finished-at="2025-07-22T00:45:08 IST" duration-ms="15902">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RedbusTestRunner@3c989952]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-07-22T00:03:54 IST" name="Chrome Test" finished-at="2025-07-22T00:04:04 IST" duration-ms="10001">
+    <test started-at="2025-07-22T00:44:52 IST" name="Edge Test" finished-at="2025-07-22T00:45:08 IST" duration-ms="15902">
       <class name="runner.RedbusTestRunner">
-        <test-method is-config="true" signature="setBrowser(java.lang.String)[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:03:54 IST" name="setBrowser" finished-at="2025-07-22T00:03:54 IST" duration-ms="37" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:03:54 IST" name="setUpClass" finished-at="2025-07-22T00:03:55 IST" duration-ms="671" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@435871cb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="beforeClassLogging()[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:03:55 IST" name="beforeClassLogging" finished-at="2025-07-22T00:03:55 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClassLogging -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:03:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-22T00:04:04 IST" duration-ms="8975" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User searches for buses and fills booking details"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Redbus Booking Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //div[contains(@class,'inputWrapper')]//input (tried for 2 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[contains(@class,'inputWrapper')]//input (tried for 2 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at commonActions.CommonActions.jsEnterValue(CommonActions.java:194)
-at redbusPages.RedbusHomePage.searchBus(RedbusHomePage.java:48)
-at stepDefinition.RedbusSteps.i_select_source_city_as(RedbusSteps.java:14)
-at ✽.I select source city as "Hyderabad"(file:///C:/Users/HP/eclipse-workspace/RedBus_Automation/src/test/resources/features/redbus.feature:6)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'inputWrapper')]//input"}
-  (Session info: chrome=138.0.7204.158)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d7f28fc97b8e2b1a6bdaac0c212f97f, findElement {value=//div[contains(@class,'inputWrapper')]//input, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57522}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57522/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d7f28fc97b8e2b1a6bdaac0c212f97f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at commonActions.CommonActions.jsEnterValue(CommonActions.java:194)
-at redbusPages.RedbusHomePage.searchBus(RedbusHomePage.java:48)
-at stepDefinition.RedbusSteps.i_select_source_city_as(RedbusSteps.java:14)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:04:04 IST" name="teardown" finished-at="2025-07-22T00:04:04 IST" duration-ms="40" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:04:04 IST" name="tearDownClass" finished-at="2025-07-22T00:04:04 IST" duration-ms="203" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.RedbusTestRunner -->
-    </test> <!-- Chrome Test -->
-    <test started-at="2025-07-22T00:03:54 IST" name="Edge Test" finished-at="2025-07-22T00:04:08 IST" duration-ms="14208">
-      <class name="runner.RedbusTestRunner">
-        <test-method is-config="true" signature="setBrowser(java.lang.String)[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:03:54 IST" name="setBrowser" finished-at="2025-07-22T00:03:54 IST" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="setBrowser(java.lang.String)[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:44:52 IST" name="setBrowser" finished-at="2025-07-22T00:44:52 IST" duration-ms="36" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -160,7 +22,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:03:54 IST" name="setUpClass" finished-at="2025-07-22T00:03:55 IST" duration-ms="671" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:44:52 IST" name="setUpClass" finished-at="2025-07-22T00:44:53 IST" duration-ms="602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,11 +33,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="beforeClassLogging()[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:03:55 IST" name="beforeClassLogging" finished-at="2025-07-22T00:03:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClassLogging()[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:44:53 IST" name="beforeClassLogging" finished-at="2025-07-22T00:44:53 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassLogging -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:03:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-22T00:04:08 IST" duration-ms="13376" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:44:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-22T00:45:08 IST" duration-ms="15060" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -191,15 +53,69 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:04:08 IST" name="teardown" finished-at="2025-07-22T00:04:08 IST" duration-ms="39" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:45:08 IST" name="teardown" finished-at="2025-07-22T00:45:08 IST" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:04:08 IST" name="tearDownClass" finished-at="2025-07-22T00:04:08 IST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RedbusTestRunner@7516e4e5]" started-at="2025-07-22T00:45:08 IST" name="tearDownClass" finished-at="2025-07-22T00:45:08 IST" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.RedbusTestRunner -->
     </test> <!-- Edge Test -->
+    <test started-at="2025-07-22T00:44:52 IST" name="Chrome Test" finished-at="2025-07-22T00:45:08 IST" duration-ms="15902">
+      <class name="runner.RedbusTestRunner">
+        <test-method is-config="true" signature="setBrowser(java.lang.String)[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:44:52 IST" name="setBrowser" finished-at="2025-07-22T00:44:52 IST" duration-ms="36" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:44:52 IST" name="setUpClass" finished-at="2025-07-22T00:44:53 IST" duration-ms="602" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@435871cb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="beforeClassLogging()[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:44:53 IST" name="beforeClassLogging" finished-at="2025-07-22T00:44:53 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassLogging -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:44:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-22T00:45:08 IST" duration-ms="15072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User searches for buses and fills booking details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Redbus Booking Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:45:08 IST" name="teardown" finished-at="2025-07-22T00:45:08 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RedbusTestRunner@3c989952]" started-at="2025-07-22T00:45:08 IST" name="tearDownClass" finished-at="2025-07-22T00:45:08 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RedbusTestRunner -->
+    </test> <!-- Chrome Test -->
   </suite> <!-- CrossBrowser Suite -->
 </testng-results>
